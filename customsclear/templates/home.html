@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <title>JONY INT'L AGENCY</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/JIA-favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/all.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="{% static 'img/JIA-black-logo.png' %}" alt="" title="" /></img></a>
+
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#portfolio">Specialised In</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+  Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Jony International Agency</h1>
+      <h2>Your Goods, Our Concern</h2>
+      <a href="#about" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+    About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Few Words About Us</h2>
+            <p>
+              {{ about.about | safe }}
+            </p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fas fa-user"></i></div>
+              <h4 class="title"><a href="">Committed to achieve customer satisfaction</a></h4>
+              <p class="description">We committed to ensure that all our product deliveries meet customer expectations in all respects, including the service and quality management.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fas fa-wrench"></i></div>
+              <h4 class="title"><a href="">Highly efficient working procedures</a></h4>
+              <p class="description">Our employees are all trained professionally and working hard is their motto and it gives us quick results.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-balance-scale"></i></div>
+              <h4 class="title"><a href="">Customer-centric policy and actions approach</a></h4>
+              <p class="description">All our policies are there to put our customers first, we make it a priority to provide an exceptional customer experience.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-book"></i></div>
+              <h4 class="title"><a href="">Complete documentation</a></h4>
+              <p class="description">We provide complete paperworks and that is what makes us transperant.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-laptop"></i></div>
+              <h4 class="title"><a href="">IT enabled system</a></h4>
+              <p class="description">We have an IT system to give you timely updates on our work progress to give you a peace of mind</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+    Facts Section
+    ============================-->
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Facts</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">50</span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">100</span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,463</span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">15</span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+    Services Section
+    ============================-->
+    <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Services</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-box"></i></a></div>
+              <h4 class="title"><a href="">Clearing & Forwarding</a></h4>
+              <p class="description">We are the best at what we do. Clearing & Forwarding is our passion. We provide hassle-free service for our customers. So just sit back, relax and concentrate more on your business.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-truck"></i></a></div>
+              <h4 class="title"><a href="">Cargo Delivery</a></h4>
+              <p class="description">We deliver your cargo safely and quickly to your preferred location. We have trucks, lorries and mini-vans at our disposal ready to set off.</p>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-hand-paper"></i></a></div>
+              <h4 class="title"><a href="">Complete Documentation</a></h4>
+              <p class="description">We provide complete documentation of all the services we provided for an individual customer. No hidden charges or fees.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-hands-helping"></i></a></div>
+              <h4 class="title"><a href="">24/7 Customer Help</a></h4>
+              <p class="description">We have customer agents ready to answer all your queries in a timely and efficient manner. So give us a call and feel free to discuss anything you like.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+    Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Clients</h3>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+        <div class="owl-carousel clients-carousel">
+          {% for c in client.all %}
+          <img src="{{ c.client_logo.url }}" alt="">
+          {% endfor %}
+        </div>
+      </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+    Gallery
+    ============================-->
+
+    <section id="gallery">
+      <div class="container gallery-container wow fadeInRight">
+        <div class="section-header">
+          <h3 class="section-title">Gallery</h3>
+          <p class="section-description">Our image gallery</p>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          {% for g in gallery.all %}
+          <div class="col-md-4 mb-3">
+            <a href="{{ g.gallery_image.url }}" data-lightbox="gallery" data-title="Cisco">
+              <img src="{{ g.gallery_image.url }}" class="img-fluid img-thumbnail" alt="Cisco">
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Quote</h3>
+            <p class="cta-text"> Need a quote? </p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Get Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+    Portfolio Section
+    ============================-->
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">We Specialise in..</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row" id="portfolio-wrapper">
+          {% for item in item.all %}
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="{{ item.item_image.url }}" alt="">
+              <div class="details">
+                <h4>{{ item.item_name }}</h4>
+                <span>{{ item.item_detail }}</span>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+    Team Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team-1.jpg' %}" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team-2.jpg' %}" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team-3.jpg' %}" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team-4.jpg' %}" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+    Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.24754063871845!2d90.4033707950018!3d23.74878258938919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b88fd8f1da15%3A0x7373d2a193bb69f5!2sRazzak%20Plaza!5e0!3m2!1sen!2sbd!4v1579071275945!5m2!1sen!2sbd" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <div class="container wow fadeInUp mt-5">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Head Office: <br>
+                  Office No#3B, 2nd Floor<br>316 Shaheed Tajuddin Ahmed Ave(Tongi Diversion Rd), Dhaka 1205</p>
+                </div>
+
+                <div>
+                  <i class="fa fa-map-marker"></i>
+                  <p>Branch Office: <br>
+                    Office No#3B, 2nd Floor<br>316 Shaheed Tajuddin Ahmed Ave(Tongi Diversion Rd), Dhaka 1205</p>
+                  </div>
+
+                  <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>info@jonyintlbd.com</p>
+                  </div>
+
+                  <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+8801711536164</p>
+                  </div>
+                </div>
+
+                <div class="social-links">
+                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+              </div>
+
+              <div class="col-lg-5 col-md-8">
+                <div class="form">
+                  <div id="sendmessage">Your message has been sent. Thank you!</div>
+                  <div id="errormessage"></div>
+                  <form action="" method="post" role="form" class="contactForm">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <div class="validation"></div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section><!-- #contact -->
+
+      </main>
+
+      <!--==========================
+      Footer
+      ============================-->
+      <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong>Jony International Agency</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="">Kamrul Amin</a>
+          </div>
+        </div>
+      </footer><!-- #footer -->
+
+      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+      <!-- JavaScript Libraries -->
+      <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+      <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+      <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+      <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+      <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+      <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+      <script src="{% static 'lib/superfish/hoverIntent.js' %}"></script>
+      <script src="{% static 'lib/superfish/superfish.min.js' %}"></script>
+      <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+      <!-- Contact Form JavaScript File -->
+      <script src="{% static 'contactform/contactform.js' %}"></script>
+
+      <!-- Template Main Javascript File -->
+      <script src="{% static 'js/main.js' %}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+
+    </body>
+    </html>
