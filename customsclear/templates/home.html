@@ -128,7 +128,7 @@
       <div class="container wow fadeIn">
         <div class="section-header">
           <h3 class="section-title">Facts</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Some facts about our company.</p>
         </div>
         <div class="row counters">
 
@@ -164,7 +164,7 @@
       <div class="container wow fadeIn">
         <div class="section-header">
           <h3 class="section-title">Services</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">We provide different services as per our customer needs. Contact us if you need any custom services.</p>
         </div>
         <div class="row">
           <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
@@ -210,7 +210,7 @@
       <div class="container">
         <div class="section-header">
           <h3 class="section-title">Clients</h3>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <!-- <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p> -->
         </div>
         <div class="owl-carousel clients-carousel">
           {% for c in client.all %}
@@ -228,7 +228,7 @@
       <div class="container gallery-container wow fadeInRight">
         <div class="section-header">
           <h3 class="section-title">Gallery</h3>
-          <p class="section-description">Our image gallery</p>
+          <p class="section-description">Our image gallery.</p>
         </div>
 
         <div class="row justify-content-center text-center">
@@ -268,7 +268,7 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">We Specialise in..</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Our dedicated team is specialised in many commercial or industrial items.</p>
         </div>
 
         <div class="row" id="portfolio-wrapper">
@@ -295,10 +295,25 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Team</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Team means Together Everyone Achieves More.</p>
         </div>
         <div class="row">
+          {% for e in employee.all %}
           <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{{ e.employee_image.url }}" alt=""></div>
+              <h4>{{ e.employee_name }}</h4>
+              <span>{{ e.employee_job }}</span>
+              <div class="social">
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-google-plus"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- <div class="col-lg-3 col-md-6">
             <div class="member">
               <div class="pic"><img src="{% static 'img/team-1.jpg' %}" alt=""></div>
               <h4>Walter White</h4>
@@ -352,7 +367,7 @@
                 <a href=""><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -365,7 +380,7 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Have any questions? We'd lvoe to hear from you.</p>
         </div>
       </div>
 
@@ -402,11 +417,11 @@
                 </div>
 
                 <div class="social-links">
-                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                  <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="fab fa-google-plus"></i></a>
+                  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
                 </div>
 
               </div>

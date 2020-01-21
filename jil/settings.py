@@ -25,7 +25,7 @@ SECRET_KEY = '9n0h%y-^^be9v%m^07hl)8dm%^hk!9x9%=p#p5()6(f*z6*a=&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'www.jonyintlbd.com', 'jonyintlbd.com']
+ALLOWED_HOSTS = ['localhost','127.0.0.1', 'www.jonyintlbd.com', 'jonyintlbd.com']
 
 
 # Application definition
