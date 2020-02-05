@@ -62,8 +62,9 @@
   ============================-->
   <section id="hero">
     <div class="hero-container">
-      <h1>Jony International Agency</h1>
-      <h2>Your Goods, Our Concern</h2>
+      <h1>M/s. Jony International Agency</h1>
+      <h2>Customs Clearing and Forwarding Agent (Sea & Air)</h2>
+      <h3>Since 1988</h3>
       <a href="#about" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- #hero -->
@@ -107,11 +108,11 @@
               <p class="description">We provide complete paperworks and that is what makes us transperant.</p>
             </div>
 
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+            <!-- <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fa fa-laptop"></i></div>
               <h4 class="title"><a href="">IT enabled system</a></h4>
               <p class="description">We have an IT system to give you timely updates on our work progress to give you a peace of mind</p>
-            </div>
+            </div> -->
 
           </div>
 
@@ -204,21 +205,31 @@
     </section><!-- #services -->
 
     <!--==========================
-    Clients Section
+    Portfolio Section
     ============================-->
-    <section id="clients" class="wow fadeInUp">
-      <div class="container">
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
         <div class="section-header">
-          <h3 class="section-title">Clients</h3>
-          <!-- <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p> -->
+          <h3 class="section-title">We Specialise in..</h3>
+          <p class="section-description">Our dedicated team is specialised in many commercial or industrial items.</p>
         </div>
-        <div class="owl-carousel clients-carousel">
-          {% for c in client.all %}
-          <img src="{{ c.client_logo.url }}" alt="">
+
+        <div class="row" id="portfolio-wrapper">
+          {% for item in item.all %}
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="{{ item.item_image.url }}" alt="">
+              <div class="details">
+                <h4>{{ item.item_name }}</h4>
+                <span>{{ item.item_detail }}</span>
+              </div>
+            </a>
+          </div>
           {% endfor %}
         </div>
+
       </div>
-    </section><!-- #clients -->
+    </section><!-- #portfolio -->
 
     <!--==========================
     Gallery
@@ -262,31 +273,23 @@
     </section><!-- #call-to-action -->
 
     <!--==========================
-    Portfolio Section
+    Clients Section
     ============================-->
-    <section id="portfolio">
-      <div class="container wow fadeInUp">
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
         <div class="section-header">
-          <h3 class="section-title">We Specialise in..</h3>
-          <p class="section-description">Our dedicated team is specialised in many commercial or industrial items.</p>
+          <h3 class="section-title">Clients</h3>
+          <!-- <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p> -->
         </div>
-
-        <div class="row" id="portfolio-wrapper">
-          {% for item in item.all %}
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="{{ item.item_image.url }}" alt="">
-              <div class="details">
-                <h4>{{ item.item_name }}</h4>
-                <span>{{ item.item_detail }}</span>
-              </div>
-            </a>
-          </div>
+        <div class="owl-carousel clients-carousel">
+          {% for c in client.all %}
+          <img src="{{ c.client_logo.url }}" alt="">
           {% endfor %}
         </div>
-
       </div>
-    </section><!-- #portfolio -->
+    </section><!-- #clients -->
+
+
 
     <!--==========================
     Team Section
@@ -325,7 +328,7 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
-          <p class="section-description">Have any questions? We'd lvoe to hear from you.</p>
+          <p class="section-description">Have any questions? We'd love to hear from you.</p>
         </div>
       </div>
 
@@ -347,7 +350,7 @@
                 <div>
                   <i class="fa fa-map-marker"></i>
                   <p>Branch Office: <br>
-                    Office No#4, 3rd Floor<br>7, Sheikh Mujib Road Omrito Plaza, Barek Building, Agrabad, Chittagong</p>
+                    Office No#6, 3rd Floor<br>7, Sheikh Mujib Road Omrito Plaza, Barek Building, Agrabad, Chittagong</p>
                   </div>
 
                   <div>
@@ -363,7 +366,7 @@
                   <div>
                     <i class="fa fa-phone"></i>
                     <p>Chittagong Branch: <br>
-                      +880-02-9341554</p>
+                      +880-1862-256100</p>
                   </div>
                 </div>
 

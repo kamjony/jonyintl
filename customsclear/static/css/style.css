@@ -189,8 +189,14 @@ h6 {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-size: 24px;
+}
+
+#hero h3 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 12px;
 }
 
 #hero .btn-get-started {
