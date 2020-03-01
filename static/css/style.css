@@ -189,8 +189,14 @@ h6 {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-size: 24px;
+}
+
+#hero h3 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 12px;
 }
 
 #hero .btn-get-started {
@@ -494,7 +500,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/JIA-about-img.png) center top no-repeat;
   margin-bottom: 10px;
 }
 
@@ -510,6 +515,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container p {
   line-height: 26px;
+  text-align: justify;
 }
 
 #about .about-container p:last-child {
